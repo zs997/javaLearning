@@ -1,4 +1,5 @@
 package java.util;
-
-public class HashMap {
+//不可取
+/*public class HashMap {
 }
+*/
