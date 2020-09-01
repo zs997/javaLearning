@@ -30,15 +30,11 @@ public class LeetCode144BinaryTreePreorderTraversal {
         }
     }
     public ArrayList<Integer> preorderTraversal1(TreeNode root) {
-
         Stack<TreeNode> s = new Stack<>();
-
         ArrayList<Integer> res = new ArrayList<>();
-
         if(root == null){
             return res;
         }
-
         s.push(root);
         while(!s.isEmpty()){
             TreeNode temp = s.pop();
@@ -51,8 +47,6 @@ public class LeetCode144BinaryTreePreorderTraversal {
             }
         }
         return res;
-
-
     }
 
 }
