@@ -12,7 +12,6 @@
         <module name="browserTest" />
         <module name="dbreverse" />
         <module name="javaKnowledge" />
-        <module name="javaLearning" />
         <module name="mosiSecret" />
       </profile>
     </annotationProcessing>
