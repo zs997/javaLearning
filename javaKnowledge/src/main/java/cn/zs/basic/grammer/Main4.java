@@ -1,5 +1,7 @@
 package cn.zs.basic.grammer;
 
+import java.util.ArrayList;
+
 public class Main4 {
     public static void main(String args[]) {
 //        try{
@@ -30,6 +32,7 @@ public class Main4 {
         //二进制转int，二进制用0b开头
       ///  0b11111;
       //  System.out.println(bn);
+       // ArrayList<TreeNode>
 
-    }
+        }
 }
