@@ -2,6 +2,8 @@ package cn.zs.practice.leetcode;
 
 import cn.zs.commonStructure.TreeNode;
 
+import java.util.concurrent.ConcurrentHashMap;
+
 public class LeetCode99RecoverBinarySearchTree {
     TreeNode pre,mistake1,mistake2;
     public void recoverTree(TreeNode root) {
@@ -10,6 +12,7 @@ public class LeetCode99RecoverBinarySearchTree {
         int temp = mistake1.val;
         mistake1.val = mistake2.val;
         mistake2.val = temp;
+      //  ConcurrentHashMap
     }
     public void inTraversal(TreeNode root){
         if(root==null) return ;
