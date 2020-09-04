@@ -1,11 +1,13 @@
 package cn.zs.practice.shopee;
 
-import sun.applet.Main;
-
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 
+import java.util.Scanner;
+/*
+*   合并瓜子。一个数组对应位置元素表示该堆瓜子数目。
+*   每次合并俩个数字。合并两个数的cost是，两个位置的数字和。
+*   合并最终到1个数，问最小成本
+* */
 public class Main1 {
     public static void main(String[] args) {
         Main1 main1 = new Main1();
@@ -15,17 +17,39 @@ public class Main1 {
 
     }
     public int getMinScoreDp(int [] gz){
-        if (gz == null ||gz.length <= 1 )
-            return 0;
-       if (gz.length ==2)
-           return gz[0]+gz[1];
-        int dp [] = new int[gz.length];
-        dp[0] = 0;
-        dp[1] = gz[0]+gz[1];
-        for (int i = 2; i < gz.length; i++) {
-            //dp[i] = Math.min(dp[i-1]+gz[i],)
+        Scanner sc = new Scanner(System.in);
+        String res = sc.nextLine();
+        res = res.substring(1,res.length()-1);
+        String[] tmp = res.split(",");
+        int[] num = new int[tmp.length+1];
+        for(int i=1;i<=tmp.length;i++) {
+            num[i] = Integer.parseInt(tmp[i-1]);
         }
-        return -1;
+        int n = tmp.length;
+        //dp[i][j] 表示 数组中 第i个，到第j个数字，合并的最小成本
+        int[][] dp = new int[n+1][n+1];
+        int[] sum = new int[n+1];
+        for(int i=0;i<=n;i++){
+            for(int j=0;j<=n;j++){
+                dp[i][j] = Integer.MAX_VALUE;
+            }
+        }
+        sum[0] = 0;
+        for(int i=1;i<=n;i++){
+            dp[i][i] = 0;
+            sum[i] = num[i]+sum[i-1] ;
+        }
+
+        for(int len=1;len<n;len++){
+            for(int i=1;i+len<=n;i++){
+                int j = i+len;
+                for(int k=i;k<j;k++){
+                    dp[i][j] = Math.min(dp[i][j],dp[i][k]+dp[k+1][j]+sum[j]-sum[i-1]);
+                }
+            }
+        }
+        System.out.println(dp[1][n]);
+        return dp[1][n];
     }
     public int getMinScore (int[] gz) {
         // write code here

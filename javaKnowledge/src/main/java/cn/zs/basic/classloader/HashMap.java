@@ -1,4 +1,4 @@
 package cn.zs.basic.classloader;
 
-public class HashMap {
-}
+//public class HashMap {
+//}
