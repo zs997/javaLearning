@@ -8,6 +8,7 @@ SSHHH
 SSHHH
 HHSHH
 HHHSS
+20200904湖泊数目
 * */
 public class Lakes {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package cn.zs.practice.shopee;
+package cn.zs.exam.shopee;
 
 import java.util.ArrayList;
 /*

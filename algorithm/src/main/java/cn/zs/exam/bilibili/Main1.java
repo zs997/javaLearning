@@ -1,4 +1,4 @@
-package cn.zs.practice.bilibili;
+package cn.zs.exam.bilibili;
 
 public class Main1 {
     public static int longestOnes(int[] A, int K) {

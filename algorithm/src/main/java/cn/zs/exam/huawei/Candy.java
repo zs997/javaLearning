@@ -12,6 +12,7 @@ import java.util.Scanner;
     5 2
     3 1
     7 2
+    20200904华为 前三糖果
 * */
 public class Candy {
     public static void main(String[] args) {
