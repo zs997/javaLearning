@@ -1,7 +1,6 @@
-package cn.zs.exam.huanju;
+package cn.zs.exam.huanjushidai;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 /*
 *   找出大于某一个数的最小水仙花数

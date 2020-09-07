@@ -1,4 +1,4 @@
-package cn.zs.exam.SameCity58;
+package cn.zs.exam.city58;
 /*
 *   0代表a,z代表25,一个数字可以有多少种字母表达方式 ac
 *   类似于青蛙跳台阶

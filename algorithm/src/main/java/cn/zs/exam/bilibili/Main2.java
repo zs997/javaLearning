@@ -1,6 +1,6 @@
 package cn.zs.exam.bilibili;
 
-public class Main3 {
+public class Main2 {
     public static void main(String[] args) {
 
     }

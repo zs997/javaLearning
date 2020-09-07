@@ -1,4 +1,4 @@
-package cn.zs.exam.SameCity58;
+package cn.zs.exam.city58;
 /**
  *  500内找加上a或b都为完全平方数的数
  * */

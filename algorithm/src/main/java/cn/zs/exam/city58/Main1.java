@@ -1,4 +1,4 @@
-package cn.zs.exam.SameCity58;
+package cn.zs.exam.city58;
 
 import java.util.ArrayList;
 import java.util.HashSet;

@@ -1,5 +1,5 @@
 package cn.zs.exam.bilibili;
-
+//由一串01组成的数组 计算k之内
 public class Main1 {
     public static int longestOnes(int[] A, int K) {
         int left = 0, right = 0;
