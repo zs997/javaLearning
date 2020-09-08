@@ -3,28 +3,18 @@ package cn.zs.exam.xiaohongshu;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Scanner;
-
+/*
+ 一个排序的数组
+ 中间有的乱序了
+ 请问最小的乱序的子数组 下标
+ 如果没有乱序 输出 - 1 -1
+* */
 public class Main2 {
     public static void main(String[] args) {
         System.out.println();
        // HashMap
     }
-    public static  void minTimes(){
-        Scanner sc = new Scanner(System.in);
-        int dis = sc.nextInt();
-        int minLen = sc.nextInt();
-        int maxLen = sc.nextInt();
-        int danger = sc.nextInt();
-        int zones [] = new int[danger];
-        for (int i = 0; i < danger; i++) {
-            zones[i] = sc.nextInt();
-        }
-        int dp[] = new int[dis+1];
 
-
-        System.out.println(dp[dis]);
-
-    }
     public static  int[] f3(int array[]){
         if (array == null || array.length == 0)
             return new int[]{-1,-1};
@@ -36,7 +26,6 @@ public class Main2 {
         for (int i = 0; i < len; i++) {
             if (array[i] < max){
                 last = i;
-
             }else {
                 max = Math.max(max,array[i]);
             }
@@ -59,7 +48,6 @@ public class Main2 {
                 max = array[i];
             }else {
                 end = i;
-
             }
         }
         if(end == -1)
@@ -72,8 +60,6 @@ public class Main2 {
             }
         }
         return  new int[]{start,end};
-
-
     }
     public static int[] f1(int nums[]){
         int res [] =new int[2];

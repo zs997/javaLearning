@@ -1,7 +1,7 @@
 package cn.zs.exam.kedaxunfei;
 
 import java.util.Scanner;
-
+//分解因式
 public class Keda4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

@@ -1,5 +1,7 @@
 package cn.zs.exam.shopee;
-
+/*
+*
+* */
 public class Main3 {
     public static void main(String[] args) {
         int expect = expect(2);

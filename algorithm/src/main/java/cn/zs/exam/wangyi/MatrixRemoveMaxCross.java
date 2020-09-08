@@ -1,5 +1,7 @@
 package cn.zs.exam.wangyi;
 import java.util.Scanner;
+//选择出矩阵中十字加和最大的 输出行列坐标，
+//剩余矩阵产生新矩阵 继续步骤，坐标是新的矩阵的坐标
 public class MatrixRemoveMaxCross {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

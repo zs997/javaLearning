@@ -3,6 +3,9 @@ package cn.zs.exam.pinduoduo;
 import java.util.*;
 /*  拼多多笔试题
     骰子有很多6面
+    给定n个骰子的六个面（标有1~6）
+    按一定次序给出
+    问n个骰子一共有几种雕刻方式
 
 * */
 public class Dice {

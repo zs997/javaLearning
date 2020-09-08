@@ -1,5 +1,5 @@
 package cn.zs.exam.xiaohongshu;
-
+//arr都是自然数  求出不在arr中的最小正整数
 public class Main1 {
     static int findMin(int[][] arr) {
         boolean hs[] = new boolean[arr.length*arr[0].length+1];
