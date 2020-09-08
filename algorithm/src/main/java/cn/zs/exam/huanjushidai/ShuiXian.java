@@ -15,7 +15,6 @@ public class ShuiXian {
                 System.out.println(i);
                 break;
         }
-
     }
     public long nextNarcissisticNumber (int n) {
         // write code here
@@ -37,10 +36,9 @@ public class ShuiXian {
             num/=10;
             N++;
         }
-        for (int i = 0; i < data.size(); i++) {
+        for (int i = 0; i < data.size(); i++){
             sum += Math.pow(data.get(i),N);
         }
         return sum == origin;
-
     }
 }

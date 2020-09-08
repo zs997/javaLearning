@@ -51,15 +51,11 @@ public class Kmp {
         else
             return -1;
     }
-    public static void fun(String s){
-        System.out.println("1");
-    }
-    public static void fun(Object o){}
-    public static void main(String[] args) {
-      //  System.out.println(kmpMatch("abcabaabaabcacb", "abaabcac"));
-        Object o = new Object();
 
-        fun(o );
+    public static void main(String[] args) {
+        int i = kmpMatch("asdfg", "df");
+        System.out.println(i);
     }
+
 
 }
