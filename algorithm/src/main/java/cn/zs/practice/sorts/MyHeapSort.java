@@ -10,19 +10,16 @@ public class MyHeapSort {
 	}
 	
 	public static void buildHeap(int arr[]){
-		
 		for(int i = (int) Math.floor(arr.length/2.0);i>=0;i--){
-			
 			heapify(arr, i, arr.length);
 		}
 	}
-	
+	//最大堆 堆顶最大
 	public static void heapify(int arr[],int i,int len){
-		
 		int left = i*2+1;
 		int right = i*2+2;
 		int maxIndex = i;
-		if(left<len&&arr[maxIndex]<arr[left]){
+		if(left<len && arr[maxIndex]<arr[left]){
 			maxIndex = left;
 		}
 		if(right<len&&arr[maxIndex]<arr[right]){
@@ -31,17 +28,11 @@ public class MyHeapSort {
 		if(maxIndex != i){
 			swap(arr,maxIndex,i);
 			heapify(arr, maxIndex, len);
-		}		
-		
-		
+		}
 	}
-	
-	
 	public static void swap(int arr[],int i,int j){		
 		int temp = arr[i];
 		arr[i] = arr[j];
 		arr[j] = temp;
 	}
-	
-	
 }

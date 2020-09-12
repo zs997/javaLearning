@@ -3,6 +3,11 @@ package cn.zs.exam.xiaomi;
 import java.util.Scanner;
 /*
 *   字符串合法性
+*   12_Aaqq12
+Password123
+PASSWORD_123
+PaSS^word
+12_Aaqq
 * */
 public class Main1 {
     public static void main(String[] args) {

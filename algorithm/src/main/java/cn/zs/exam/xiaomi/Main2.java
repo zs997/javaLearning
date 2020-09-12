@@ -3,7 +3,7 @@ package cn.zs.exam.xiaomi;
 import java.util.Scanner;
 /*
 *   矩阵中的单词
-* */
+** */
 public class Main2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

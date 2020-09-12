@@ -16,11 +16,13 @@ public class BinaryTree {
 			data.add(s);
 		}
 		bt.CreateBinaryTree(data);
+		bt.midOrderNon1();
 		bt.midOrderNon();
-		System.out.println(bt.depth());
-		System.out.println(bt.nodeCount());
-		bt.AfterOrder();
-		bt.AfterOrderNon();
+		//bt.midOrderNon();
+		//System.out.println(bt.depth());
+		//System.out.println(bt.nodeCount());
+	//	bt.AfterOrder();
+	//	bt.AfterOrderNon();
 	}
 	//定义节点类型
 	private class TreeNode{
@@ -190,7 +192,25 @@ public class BinaryTree {
 			preOrder(root.right);
 		}
 	}
+	//非递归 中序遍历
+	public void midOrderNon1(){
+		System.out.println("中序遍历");
+        Stack<TreeNode> stack = new Stack<>();
+        stack.push(root);
+        TreeNode temp = root.left;
+        while (!stack.isEmpty()){
+            if (temp != null){
+                stack.push(temp);
+                temp = temp.left;
+            }else {
+                TreeNode pop = stack.pop();
+                System.out.println(pop.data);
+                temp = pop.right;
+            }
 
+        }
+
+    }
 	//非递归 中序遍历 ok
 	public void midOrderNon(){
 		System.out.println("this is mid Order non");
@@ -199,7 +219,6 @@ public class BinaryTree {
 		TreeNode temp = root;
 		boolean flag = true; //继续追溯的标志
 		while(!stack.isEmpty()){
-
 			if((temp.left != null)&&(flag == true)){
 				stack.push(temp.left);
 				temp = temp.left;
@@ -213,9 +232,7 @@ public class BinaryTree {
 					flag = true;
 				}
 			}
-
 		}
-
 	}
 
 

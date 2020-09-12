@@ -14,7 +14,7 @@ public class Sorts {
             System.out.println(arr[i]);
         }
     }
-    //1.选择排序
+    //1.选择排序  平均O(n2)	最坏O(n2)	最好O(n2) 不稳定
     public  static void selectSort(int [] arr){
         for(int i = 0;i < arr.length-1;i++){
             int minIndex = i;
@@ -28,7 +28,7 @@ public class Sorts {
             arr[minIndex] = temp;
         }
     }
-    //2.插入排序
+    //2.插入排序 平均O(n2)	最坏O(n2)	最好O(n)		稳定
     public static void insertSort(int arr []){
         for(int i = 1; i < arr.length;i++){
             int temp = arr[i];
@@ -41,10 +41,9 @@ public class Sorts {
                 }
             }
             arr[j+1] = temp;
-
         }
     }
-    //3.冒泡排序
+    //3.冒泡排序 稳定 O(n2)	O(n2)	O(n)
     public static void  bubbleSort(int arr[]){
         for(int i = 0;i <arr.length-1;i++){
             for(int j = 0;j<arr.length-1-i;j++){
@@ -56,7 +55,7 @@ public class Sorts {
             }
         }
     }
-    //4.希尔排序
+    //4.希尔排序 非稳定 n (1.3~2)
     public static void hearSort(int arr[]){
         int gap = arr.length/2;
         while(gap >= 1){
@@ -79,7 +78,7 @@ public class Sorts {
             gap/= 2;
         }
     }
-    //5.归并排序
+    //5.归并排序 nlogn 稳定
     public  static void mergeSort(int [] arr, int start,int end){
        if(start >= end){
            return;
@@ -92,7 +91,6 @@ public class Sorts {
 
     private static void mergeSortHelp(int[] arr, int start, int mid, int end) {
         int temp [] = new int[end-start+1];
-
         int p1 = start;
         int p2 = mid+1;
         int p3 = 0;
@@ -109,12 +107,11 @@ public class Sorts {
         while (p2 <= end){
             temp[p3++] = arr[p2++];
         }
-
         for(int i = 0; i <temp.length;i++){
             arr[start++] = temp[i];
         }
     }
-    //6.快速排序
+    //6.快速排序 nlogn 不稳定 this
     public  static void quickSort(int arr[],int leftIndex,int rightIndex){
        if(leftIndex >= rightIndex){
             return;
@@ -123,20 +120,20 @@ public class Sorts {
        int right = rightIndex;
        int key = arr[left];
        while (left < right){
-               while (left<right && arr[right] >= key){
-                   right--;
-               }
-              arr[left] = arr[right];
-               while (left < right && arr[left] <= key){
-                   left++;
-               }
-              arr[right]  = arr[left];
+           while (left<right && arr[right] >= key){
+               right--;
+           }
+          arr[left] = arr[right];
+           while (left < right && arr[left] <= key){
+               left++;
+           }
+          arr[right]  = arr[left];
        }
        arr[left] = key;
        quickSort(arr,leftIndex,left-1);
        quickSort(arr,left+1,rightIndex);
     }
-    //7.堆排序 没学会
+    //7.堆排序 nlogn 不稳定
     public static void heapSort(int arr[]){
         int n = arr.length;
         //构建大顶堆
@@ -199,9 +196,6 @@ public class Sorts {
                 arr[k++] = i+min;
             }
         }
-
-
-
     }
 
     //9.桶排序

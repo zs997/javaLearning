@@ -1,5 +1,7 @@
 package cn.zs.practice;
 
+import java.util.concurrent.ConcurrentHashMap;
+
 public class Sports {
 	
 	public static void Schedule(int [][] table ,int n){
@@ -39,7 +41,7 @@ public class Sports {
 			n  = n >> 1;
 			k++;
 		}
-		
+		//ConcurrentHashMap
 		table[0][0] = 1;
 		int m = 1;
 		n = 2;
