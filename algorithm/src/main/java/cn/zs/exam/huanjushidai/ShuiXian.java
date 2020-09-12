@@ -1,7 +1,6 @@
-package cn.zs.exam.huanju;
+package cn.zs.exam.huanjushidai;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 /*
 *   找出大于某一个数的最小水仙花数
@@ -16,7 +15,6 @@ public class ShuiXian {
                 System.out.println(i);
                 break;
         }
-
     }
     public long nextNarcissisticNumber (int n) {
         // write code here
@@ -38,10 +36,9 @@ public class ShuiXian {
             num/=10;
             N++;
         }
-        for (int i = 0; i < data.size(); i++) {
+        for (int i = 0; i < data.size(); i++){
             sum += Math.pow(data.get(i),N);
         }
         return sum == origin;
-
     }
 }

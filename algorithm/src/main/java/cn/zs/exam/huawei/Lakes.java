@@ -8,6 +8,8 @@ SSHHH
 SSHHH
 HHSHH
 HHHSS
+20200904湖泊数目
+S是水  独立的湖泊数目
 * */
 public class Lakes {
     public static void main(String[] args) {

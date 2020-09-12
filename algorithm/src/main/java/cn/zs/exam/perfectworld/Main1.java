@@ -7,7 +7,7 @@ import java.util.Scanner;
 他每次只偷一半加一个（例如为4，则偷2 + 1 一共三个），
 假设小王第N天发现自己只剩下一颗桃子，那么小王原本有几颗桃子
   * */
-public class PerfectWorld {
+public class Main1 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int res;

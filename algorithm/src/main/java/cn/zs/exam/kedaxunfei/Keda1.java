@@ -2,11 +2,13 @@ package cn.zs.exam.kedaxunfei;
 
 import java.util.Scanner;
 /*
-*
+*矩阵中 从0,0 到右下角最长路径
 3,3
-2  3 1
+2 3 1
 1 5 1
 4 2 1
+
+13
 * */
 public class Keda1 {
     public static void main(String[] args) {

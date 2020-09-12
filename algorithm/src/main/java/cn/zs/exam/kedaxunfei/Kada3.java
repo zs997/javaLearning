@@ -1,7 +1,10 @@
 package cn.zs.exam.kedaxunfei;
 
 import java.util.Scanner;
-
+/* ___avsd___asff_SFAG__
+去除字符串前后的‘_’
+中间部分只留一个
+*/
 public class Kada3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

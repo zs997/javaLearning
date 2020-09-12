@@ -4,6 +4,12 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Scanner;
 /*
+给一矩阵 0 1组合
+1代表有士兵
+0代表无
+每个孤立的1团体是每个团体士兵数目
+移动一个1 到一个0
+使得产生最大的团体
 *     3 4
        0 1 0 0
        1 0 1 1

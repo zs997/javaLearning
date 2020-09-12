@@ -1,8 +1,8 @@
-package cn.zs.practice.shopee;
+package cn.zs.exam.shopee;
 
 import java.util.ArrayList;
 /*
-*   给定一字符串，补充几个字符
+*   给定一字符串，最少补充几个字符
 *   可以产生循环节
 *   KMP
 * */

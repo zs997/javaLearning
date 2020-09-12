@@ -2,7 +2,8 @@ package cn.zs.exam.perfectworld;
 
 import java.util.Scanner;
 import java.util.Stack;
-
+// 给定一个入栈顺序一个出栈顺序
+//判断是否是合法的出栈
 public class Main3 {
 
     /*请完成下面这个函数，实现题目要求的功能

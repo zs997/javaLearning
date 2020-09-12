@@ -12,6 +12,12 @@ import java.util.Scanner;
     5 2
     3 1
     7 2
+    20200904华为 前三糖果
+    输入两组成员
+    分别拿红色糖果和蓝色糖果
+    求 三位同学
+    他们拿着相同颜色的糖果
+    大于任何三个拿着相同颜色的糖果（与前者可以不同）
 * */
 public class Candy {
     public static void main(String[] args) {

@@ -1,11 +1,7 @@
-package cn.zs.practice.shopee;
-
-import sun.nio.ch.ThreadPool;
-
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ThreadPoolExecutor;
-
+package cn.zs.exam.shopee;
+/*
+*
+* */
 public class Main3 {
     public static void main(String[] args) {
         int expect = expect(2);

@@ -2,11 +2,15 @@ package cn.zs.exam.huawei;
 
 import java.util.Scanner;
 /*
-9
-5
-2 2 4 6 3
-3 4 8 9 6
-*/
+背包问题，在背包装的最满的情况下 最大的价值
+与其他背包不同  求上界，再做装满的01背包
+    9
+    5
+    2 2 4 6 3
+    3 4 8 9 6
+
+    18
+* */
 public class Kache2 {
     static int weight []  ;
     static int value [];

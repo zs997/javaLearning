@@ -3,6 +3,12 @@ package cn.zs.exam.pinduoduo;
 import java.util.Scanner;
 /*
 *   打印米字分割的矩阵
+    米字分割了八份 分割线为0
+    其他每部分都是 1 2 3 4 5 6 7 8
+*   0 2 1 0
+*   3 0 0 8
+*   4 0 0 7
+*   0 5 6 0
 * */
 public class PrintRectangle {
     public static void main(String[] args) {

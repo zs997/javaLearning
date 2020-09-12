@@ -1,9 +1,6 @@
 package cn.zs.practice.sorts;
 
 public class MyHeapSort {
-	
-	
-	
 	public static void heapSort(int arr[]){
 		buildHeap(arr);
 		for(int i = arr.length-1;i>0;i--){

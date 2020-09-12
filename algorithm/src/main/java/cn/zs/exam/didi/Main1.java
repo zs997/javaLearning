@@ -4,8 +4,12 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
-
-public class Didi1 {
+/*
+*   100~1000
+*   abc为100~1000范围的数字
+*   acc+abc = num
+* */
+public class Main1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int num = scanner.nextInt();

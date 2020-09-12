@@ -1,7 +1,7 @@
 package cn.zs.exam.nognhang;
 
 import java.util.Arrays;
-
+//字符串排序 第一位 按照 k s h p q z  第二位按照数字
 public class PokerSort {
     public static void main(String args[]){
             String [] data = {"s1","s3","s9","s4","h1","p3","p2","q5","q4","q9","k2","k1"};

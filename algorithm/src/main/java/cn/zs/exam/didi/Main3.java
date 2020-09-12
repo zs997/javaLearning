@@ -3,8 +3,12 @@ package cn.zs.exam.didi;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
-public class abc {
+/*
+ *   100~1000
+ *   abc为100~1000范围的数字
+ *   acc+abc = num
+ * */
+public class Main3 {
     static List<List<Integer>>res = new ArrayList<List<Integer>>();
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
