@@ -7,7 +7,9 @@ import java.util.Stack;
 public class Q1 {
     public int calByBackwardNotation (String express) {
         // write code here
-        return  -1;
+        String[] split = express.split("");
+        int i = evaluateExpression(split);
+        return  i;
     }
 
 
