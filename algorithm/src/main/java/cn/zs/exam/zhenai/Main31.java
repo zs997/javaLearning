@@ -87,10 +87,10 @@ public class Main31 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        ExpressionCalc m = new ExpressionCalc();
+//        ExpressionCalc m = new ExpressionCalc();
         while (sc.hasNext()) {
             // 程序需要前后补一个括号
-            System.out.println(m.calc((sc.nextLine() + ")").toCharArray()));
+//            System.out.println(m.calc((sc.nextLine() + ")").toCharArray()));
         }
 
     }
