@@ -11,7 +11,7 @@ public class Main3 {
 
         List<String> suffixList = parseToSuffixExpression(expressionList);
         System.out.println("对应的后缀表达式列表结构="+suffixList);
-       
+
         int calculateResult = calculate(suffixList);
         System.out.printf(expression+"=%d\n",calculateResult);
     }
