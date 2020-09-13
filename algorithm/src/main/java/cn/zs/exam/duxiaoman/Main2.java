@@ -3,11 +3,25 @@ package cn.zs.exam.duxiaoman;
 import javax.xml.transform.Source;
 import java.util.Scanner;
 /*
+N=3 k =2
+in:
 3 2
 0#0
 0#1
 000
-3表示
+
+out :
+4
+
+
+3表示 3*3矩阵
+从左上角出发
+每次可以向上下左右走
+走到右下角要多久
+每走一步要1s
+# 代表陷阱 进去了要加k=2 秒
+1代表墙壁 不能走
+
 * */
 public class Main2 {
     static char [][] data ;
