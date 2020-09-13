@@ -39,13 +39,6 @@ public class Main2 {
                 data[integer][i] = s2.charAt(i);
             }
         }
-//        for (int i = 0; i < data.length; i++) {
-//            for (int i1 = 0; i1 < data[i].length; i1++) {
-//                System.out.print(data[i][i1]+" ");
-//            }
-//            System.out.println();
-//        }
-        //
         int dp[][] = new int[n][n];
         for (int i = 0; i < dp.length; i++) {
             for (int j = 0; j < dp[0].length; j++) {
