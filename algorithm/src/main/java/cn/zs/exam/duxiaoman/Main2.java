@@ -25,7 +25,7 @@ out :
 * */
 public class Main2 {
     static char [][] data ;
-
+  //  static  final  int max = 9999;
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String s = scanner.nextLine();
@@ -47,10 +47,47 @@ public class Main2 {
 //        }
         //
         int dp[][] = new int[n][n];
-        dp[0][0] = 0;
-        for (int i = 0; i < data.length; i++) {
-         //   if (data[][])
+        for (int i = 0; i < dp.length; i++) {
+            for (int j = 0; j < dp[0].length; j++) {
+                dp[i][j] = Integer.MAX_VALUE;
+            }
         }
+        dp[0][0] = 0;
+        for (int j = 1; j < data.length; j++) {
+            if (data[0][j] == '#'){
+                dp[0][j] = dp[0][j-1]+1+k;
+            }else if (data[0][j] == '0'){
+                dp[0][j] = dp[0][j-1]+1;
+            }else {
+                break;
+            }
+        }
+        for (int i = 1; i < data.length; i++) {
+            if (data[i][0] == '#'){
+                dp[i][0] = dp[i-1][0]+1+k;
+            }else if (data[i][0] == '0'){
+                dp[i][0] = dp[i-1][0]+1;
+            }else {
+                break;
+            }
+        }
+        for (int i = 1; i <data.length;i++){
+            for (int j = 1; j <data[0].length;j++){
+                if (data[i][j] == '0'){
+                    dp[i][j] = Math.min(dp[i-1][j],dp[i][j-1]) == Integer.MAX_VALUE ?
+                            Integer.MAX_VALUE:Math.min(dp[i-1][j],dp[i][j-1])+1;
+                }else if (data[i][j] == '#'){
+                    dp[i][j] = Math.min(dp[i-1][j],dp[i][j-1]) == Integer.MAX_VALUE ?
+                            Integer.MAX_VALUE:Math.min(dp[i-1][j],dp[i][j-1])+1+k;
+                }else {
 
+                }
+            }
+        }
+        if (dp[n-1][n-1] == Integer.MAX_VALUE){
+            System.out.println("No solution");
+        }else {
+            System.out.println(dp[n-1][n-1]);
+        }
     }
 }
