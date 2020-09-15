@@ -1,6 +1,4 @@
 package cn.zs.exam.duxiaoman;
-
-import javax.xml.transform.Source;
 import java.util.Scanner;
 /*
 N=3 k =2
@@ -39,13 +37,20 @@ public class Main2 {
                 data[integer][i] = s2.charAt(i);
             }
         }
-        int dp[][] = new int[n][n];
+//        for (int i = 0; i < data.length; i++) {
+//            for (int i1 = 0; i1 < data[i].length; i1++) {
+//                System.out.print(data[i][i1]+" ");
+//            }
+//            System.out.println();
+//        }
+        //
+        long dp[][] = new long[n][n];
         for (int i = 0; i < dp.length; i++) {
             for (int j = 0; j < dp[0].length; j++) {
-                dp[i][j] = Integer.MAX_VALUE;
+                dp[i][j] = Long.MAX_VALUE;
             }
         }
-        dp[0][0] = 0;
+        dp[0][0] = 0l;
         for (int j = 1; j < data.length; j++) {
             if (data[0][j] == '#'){
                 dp[0][j] = dp[0][j-1]+1+k;
@@ -67,17 +72,17 @@ public class Main2 {
         for (int i = 1; i <data.length;i++){
             for (int j = 1; j <data[0].length;j++){
                 if (data[i][j] == '0'){
-                    dp[i][j] = Math.min(dp[i-1][j],dp[i][j-1]) == Integer.MAX_VALUE ?
-                            Integer.MAX_VALUE:Math.min(dp[i-1][j],dp[i][j-1])+1;
+                    dp[i][j] = Math.min(dp[i-1][j],dp[i][j-1]) == Long.MAX_VALUE ?
+                            Long.MAX_VALUE:Math.min(dp[i-1][j],dp[i][j-1])+1;
                 }else if (data[i][j] == '#'){
-                    dp[i][j] = Math.min(dp[i-1][j],dp[i][j-1]) == Integer.MAX_VALUE ?
-                            Integer.MAX_VALUE:Math.min(dp[i-1][j],dp[i][j-1])+1+k;
+                    dp[i][j] = Math.min(dp[i-1][j],dp[i][j-1]) == Long.MAX_VALUE ?
+                            Long.MAX_VALUE:Math.min(dp[i-1][j],dp[i][j-1])+1+k;
                 }else {
 
                 }
             }
         }
-        if (dp[n-1][n-1] == Integer.MAX_VALUE){
+        if (dp[n-1][n-1] == Long.MAX_VALUE){
             System.out.println("No solution");
         }else {
             System.out.println(dp[n-1][n-1]);

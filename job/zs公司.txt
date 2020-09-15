@@ -26,3 +26,4 @@ bigo
 arm中国（安谋科技）
 花旗银行
 thoughtworks
+拼多多
