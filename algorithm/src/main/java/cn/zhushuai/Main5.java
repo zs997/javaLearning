@@ -12,10 +12,7 @@ public class Main5 {
         queue.push(2);
         int pull = queue.pull();
         System.out.println(pull);
-//        Reader
 
-     //   Writer
-     //   InputStream
     }
     Stack<Integer> stack1 = new Stack<>();
     Stack<Integer> stack2 = new Stack<>();
