@@ -1,29 +1,43 @@
 package cn.hsq.jd;
-
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Scanner;
 
-/**
- * @ClassName Solution
- * @Description  给你一个地图，其中‘S’表示起点，'T'表示终点。‘#’代表墙壁表示无法通过,
- * '.’表示路可以花一分钟通过。请你求出从起点到终点需要花费的最短时间。如果无法到达终点请输出-1。
- * 样例
- * input:map=[['S','.'],['#','T']]
- * output:t=2
- * @Author huanshunqi
- * @Date 2020/9/17 20:02
- * @Version 1.0
- **/
 class node{
     int x,y,t;
 }
 public class Solution {
 
-    /**
-     * @param maps:
-     * @return: nothing
-     */
-    public int theMazeIV(char[][] maps) {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String s = scanner.nextLine();
+        int T = Integer.parseInt(s);
+        for (int i = 0; i < T; i++) {
+            String s1 = scanner.nextLine();
+            String[] s2 = s1.split(" ");
+
+            int n = Integer.parseInt(s2[0]);
+            int m = Integer.parseInt(s2[1]);
+            char [][] map = new char[n][m];
+            for (int i1 = 0; i1 < n; i1++) {
+                String s3 = scanner.nextLine();
+                for (int i2 = 0; i2 < s3.length(); i2++) {
+                    map[i1][i2] = s3.charAt(i2);
+                }
+            }
+            int res = findgirl(map);
+            if (res == -1){
+                System.out.println("NO");
+            }else {
+                System.out.println("YES");
+            }
+
+        }
+
+
+
+    }
+    public static int findgirl(char[][] maps) {
         node start = new node();
         node end = new node();
         Queue<node> queue=new LinkedList<>();
@@ -36,7 +50,7 @@ public class Solution {
                     start.y = j;
                     start.t = 0;
                 }
-                if (maps[i][j] == 'T'){
+                if (maps[i][j] == 'E'){
                     end.x = i;
                     end.y = j;
                     end.t = 0;
