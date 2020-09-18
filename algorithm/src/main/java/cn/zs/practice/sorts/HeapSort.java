@@ -1,7 +1,13 @@
 package cn.zs.practice.sorts;
 
 public class HeapSort {
-
+	public static void main(String[] args) {
+		int arr [] = {3,8,5,3,1,4,6};
+		heapSort(arr);
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i]+" ");
+		}
+	}
 	public static void heapSort(int[] arr) {
 		if (arr == null || arr.length == 0) {
 			return;
@@ -9,7 +15,6 @@ public class HeapSort {
 		int len = arr.length;
 		// 构建大顶堆，这里其实就是把待排序序列，变成一个大顶堆结构的数组
 		buildMaxHeap(arr, len);
-
 		// 交换堆顶和当前末尾的节点，重置大顶堆
 		for (int i = len - 1; i > 0; i--) {
 			swap(arr, 0, i);
