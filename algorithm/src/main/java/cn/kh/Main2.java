@@ -45,8 +45,6 @@ public  class Main2 {
             }
             if (map[newRow][newColumn] == '#'){
                 deepSearch(map,newRow,newColumn,time + k + 1,k);
-            }else{
-                deepSearch(map,newRow,newColumn,time + 1,k);
             }
         }
         map[row][column] = c;
