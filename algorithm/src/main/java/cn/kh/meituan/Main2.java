@@ -1,6 +1,6 @@
 package cn.kh.meituan;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Main2 {
     public static int[][] direction = new int[][]{{-1,0},{1,0},{0,-1},{0,1}};
