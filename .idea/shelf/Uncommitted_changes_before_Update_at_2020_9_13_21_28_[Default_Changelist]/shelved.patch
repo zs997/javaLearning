@@ -1,0 +1,128 @@
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"CompilerConfiguration\">\r\n    <annotationProcessing>\r\n      <profile name=\"Maven default annotation processors profile\" enabled=\"true\">\r\n        <sourceOutputDir name=\"target/generated-sources/annotations\" />\r\n        <sourceTestOutputDir name=\"target/generated-test-sources/test-annotations\" />\r\n        <outputRelativeToContentRoot value=\"true\" />\r\n        <module name=\"algorithm\" />\r\n        <module name=\"browserBackup\" />\r\n        <module name=\"browserFinal\" />\r\n        <module name=\"browserTest\" />\r\n        <module name=\"dbreverse\" />\r\n        <module name=\"javaKnowledge\" />\r\n        <module name=\"mosiSecret\" />\r\n      </profile>\r\n    </annotationProcessing>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/compiler.xml	(revision c9d4b0fee501518c7ed7cf255890ca9df06f3e0b)
++++ .idea/compiler.xml	(date 1600002944475)
+@@ -6,13 +6,13 @@
+         <sourceOutputDir name="target/generated-sources/annotations" />
+         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+         <outputRelativeToContentRoot value="true" />
++        <module name="javaKnowledge" />
++        <module name="dbreverse" />
++        <module name="browserTest" />
+         <module name="algorithm" />
+-        <module name="browserBackup" />
+         <module name="browserFinal" />
+-        <module name="browserTest" />
+-        <module name="dbreverse" />
+-        <module name="javaKnowledge" />
+         <module name="mosiSecret" />
++        <module name="browserBackup" />
+       </profile>
+     </annotationProcessing>
+   </component>
+Index: .idea/jarRepositories.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/jarRepositories.xml	(date 1600002944497)
++++ .idea/jarRepositories.xml	(date 1600002944497)
+@@ -0,0 +1,20 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="RemoteRepositoriesConfiguration">
++    <remote-repository>
++      <option name="id" value="central" />
++      <option name="name" value="Central Repository" />
++      <option name="url" value="https://repo.maven.apache.org/maven2" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="central" />
++      <option name="name" value="Maven Central repository" />
++      <option name="url" value="https://repo1.maven.org/maven2" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="jboss.community" />
++      <option name="name" value="JBoss Community repository" />
++      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
++    </remote-repository>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_2020_9_13_18_58_[Default_Changelist]/shelved.patch
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/shelf/Uncommitted_changes_before_Update_at_2020_9_13_18_58_[Default_Changelist]/shelved.patch	(date 1600002944490)
++++ .idea/shelf/Uncommitted_changes_before_Update_at_2020_9_13_18_58_[Default_Changelist]/shelved.patch	(date 1600002944490)
+@@ -0,0 +1,40 @@
++Index: .idea/javaLearning.iml
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++--- .idea/javaLearning.iml	(date 1599967571906)
+++++ .idea/javaLearning.iml	(date 1599967571906)
++@@ -0,0 +1,2 @@
+++<?xml version="1.0" encoding="UTF-8"?>
+++<module type="JAVA_MODULE" version="4" />
++\ No newline at end of file
++Index: .idea/jarRepositories.xml
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++--- .idea/jarRepositories.xml	(date 1599967572047)
+++++ .idea/jarRepositories.xml	(date 1599967572047)
++@@ -0,0 +1,20 @@
+++<?xml version="1.0" encoding="UTF-8"?>
+++<project version="4">
+++  <component name="RemoteRepositoriesConfiguration">
+++    <remote-repository>
+++      <option name="id" value="central" />
+++      <option name="name" value="Central Repository" />
+++      <option name="url" value="https://repo.maven.apache.org/maven2" />
+++    </remote-repository>
+++    <remote-repository>
+++      <option name="id" value="central" />
+++      <option name="name" value="Maven Central repository" />
+++      <option name="url" value="https://repo1.maven.org/maven2" />
+++    </remote-repository>
+++    <remote-repository>
+++      <option name="id" value="jboss.community" />
+++      <option name="name" value="JBoss Community repository" />
+++      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+++    </remote-repository>
+++  </component>
+++</project>
++\ No newline at end of file
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_2020_9_13_18_58__Default_Changelist_.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/shelf/Uncommitted_changes_before_Update_at_2020_9_13_18_58__Default_Changelist_.xml	(date 1600003465623)
++++ .idea/shelf/Uncommitted_changes_before_Update_at_2020_9_13_18_58__Default_Changelist_.xml	(date 1600003465623)
+@@ -0,0 +1,4 @@
++<changelist name="Uncommitted_changes_before_Update_at_2020_9_13_18_58_[Default_Changelist]" date="1599994702888" recycled="true" deleted="true">
++  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2020_9_13_18_58_[Default_Changelist]/shelved.patch" />
++  <option name="DESCRIPTION" value="Uncommitted changes before Update at 2020/9/13 18:58 [Default Changelist]" />
++</changelist>
+\ No newline at end of file
+Index: .idea/javaLearning.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/javaLearning.iml	(date 1600002944504)
++++ .idea/javaLearning.iml	(date 1600002944504)
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4" />
+\ No newline at end of file
