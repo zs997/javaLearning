@@ -1,14 +1,6 @@
 package cn.zhushuai.genshuixue;
-
-import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
-
 public class Main2 {
-
-
     /*请完成下面这个函数，实现题目要求的功能
     当然，你也可以不按照下面这个模板来作答，完全按照自己的想法来 ^-^
     ******************************开始写代码******************************/
@@ -39,8 +31,8 @@ public class Main2 {
                 while (!stack.empty()) {
                     String node = stack.pop();
                     component.add(node);
-                    for (String nei: graph.get(node)) {
-                        if (!seen.contains(nei)) {
+                    for (String nei: graph.get(node)){
+                        if (!seen.contains(nei)){
                             seen.add(nei);
                             stack.push(nei);
                         }
@@ -54,13 +46,9 @@ public class Main2 {
         return ans;
     }
     /******************************结束写代码******************************/
-
-
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-
         int _count = Integer.parseInt(in.nextLine());
-
         int _i = 0;
         List<List<String>> _accounts = new ArrayList<List<String>>();
         while (_i++ < _count) {
@@ -68,20 +56,15 @@ public class Main2 {
             String[] _item = _line.split(",");
             _accounts.add(Arrays.asList(_item));
         }
-
         List<List<String>> res = mergeAccount(_accounts);
-
         Collections.sort(res, new Comparator<List<String>>() {
-
             @Override
             public int compare(List<String> o1, List<String> o2) {
                 String aName1 = String.join(",", o1);
                 String aName2 = String.join(",", o2);
                 return aName1.compareTo(aName2);
             }
-
         });
-
         for (int res_i = 0; res_i < res.size(); res_i++) {
             List<String> resItem = res.get(res_i);
             System.out.println(String.join(",", resItem));
