@@ -3,8 +3,10 @@ package cn.zs.practice;
 public class Test extends  Thread {
     String name;
     public static void main(String args[]){
-        Test test = new Test();
-        test.execute();
+      //Test test = new Test();
+       // test.execute();
+        Character s = 's';
+        System.out.println(s-1);
     }
     Test(){}
     Test(String name){
