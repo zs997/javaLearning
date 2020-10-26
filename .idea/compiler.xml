@@ -6,14 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="javaKnowledge" />
         <module name="algorithm" />
+        <module name="browserBackup" />
+        <module name="browserFinal" />
         <module name="browserTest" />
         <module name="dbreverse" />
-        <module name="browserFinal" />
+        <module name="javaKnowledge" />
         <module name="mosiSecret" />
-        <module name="browserBackup" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="SecretKey" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
