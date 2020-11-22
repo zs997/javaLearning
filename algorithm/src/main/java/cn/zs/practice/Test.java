@@ -1,12 +1,16 @@
 package cn.zs.practice;
 
+import java.util.ArrayList;
+
 public class Test extends  Thread {
     String name;
     public static void main(String args[]){
       //Test test = new Test();
        // test.execute();
+        //
         Character s = 's';
         System.out.println(s-1);
+        ArrayList<String> aa = new ArrayList<>();
     }
     Test(){}
     Test(String name){

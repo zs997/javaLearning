@@ -14,7 +14,6 @@
     <modules>
         <module>mosiSecret</module>
         <module>browser</module>
-        <module>SecretKey</module>
     </modules>
 
 
