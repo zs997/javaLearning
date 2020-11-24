@@ -11,8 +11,8 @@
 		</commentGenerator>
 		<!--数据库连接的信息：驱动类、连接地址、用户名、密码 -->
 		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
-			connectionURL="jdbc:mysql://localhost:3306/e3mall" userId="root"
-			password="1234">
+			connectionURL="jdbc:mysql://localhost:3306/reserch" userId="root"
+			password="root">
 		</jdbcConnection>
 		<!-- 默认false，把JDBC DECIMAL 和 NUMERIC 类型解析为 Integer，为 true时把JDBC DECIMAL 和 
 			NUMERIC 类型解析为java.math.BigDecimal -->
@@ -42,7 +42,7 @@
 			<property name="enableSubPackages" value="false" />
 		</javaClientGenerator>
 		<!-- 指定数据库表 -->
-		<table schema="" tableName="tb_content"></table>
+		<table schema="" tableName="orders"></table>
 
 
 	</context>

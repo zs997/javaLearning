@@ -12,7 +12,7 @@
     <artifactId>tools</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>dbreverse</module>
+      <module>generatorSqlmapCustommaster</module>
     </modules>
 
 

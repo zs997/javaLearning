@@ -1,7 +1,4 @@
 package cn.zs.exam.zhenai;
-
-import com.sun.xml.internal.bind.v2.model.core.ID;
-
 public class Main1 {
     public boolean parking (int[] park, int n) {
         // write code here
