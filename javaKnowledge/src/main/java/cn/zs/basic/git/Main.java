@@ -15,6 +15,7 @@ public class Main {
      * idea GitHub登录啥的不用管
      * setting中ignore files 可以选择
      * 只提交java代码 和pom文件 就ok
+     * 
      */
 
 }
