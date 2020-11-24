@@ -25,6 +25,7 @@ public class GeneratorSqlmap {
         /*
         //另一种写法，从资源目录classes文件夹中获取配置文件。经过打包之后，就是从jar包中获取配置文件。
         //打成jar包，不好修改配置。
+        test
         URL resource = GeneratorSqlmap.class.getClassLoader().getResource("generatorConfig.xml");
         String file = resource.getFile();
         File configFile = new File(file);
