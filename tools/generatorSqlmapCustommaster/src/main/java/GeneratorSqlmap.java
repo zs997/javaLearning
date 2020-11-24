@@ -28,6 +28,7 @@ public class GeneratorSqlmap {
        URL resource = GeneratorSqlmap.class.getClassLoader().getResource("generatorConfig.xml");
         String file = resource.getFile();
         File configFile = new File(file);
+        
          */
         ConfigurationParser cp = new ConfigurationParser(warnings);
         Configuration config = cp.parseConfiguration(configFile);
