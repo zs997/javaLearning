@@ -11,6 +11,7 @@
         <module name="browserFinal" />
         <module name="browserTest" />
         <module name="dbreverse" />
+        <module name="generatorSqlmapCustom-master" />
         <module name="javaKnowledge" />
         <module name="mosiSecret" />
       </profile>
