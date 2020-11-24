@@ -10,6 +10,11 @@ public class Main {
      *
      * 如果git使用 ssh 关联了GitHub账户（一台计算机一个关联），从此计算机上，使用ssh下载的项目，每次都可以直接push
      *
+     * 总之，使用ssh绑定每个本地git，idea集成git
+     * 使用ssh下载项目 然后push 就ok
+     * idea GitHub登录啥的不用管
+     * setting中ignore files 可以选择
+     * 只提交java代码 和pom文件 就ok
      */
 
 }
