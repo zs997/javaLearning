@@ -4,9 +4,7 @@ package cn.zs.basic.grammer;
 import cn.zs.commonStructure.TreeNode;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.CopyOnWriteArrayList;
+
 
 public class CollectionTest {
     public static void main(String args[]){
