@@ -15,7 +15,11 @@ public class Main {
      * idea GitHub登录啥的不用管
      * setting中ignore files 可以选择
      * 只提交java代码 和pom文件 就ok
-     * 
+     *
+     *
+     * 现在对notebook进行测试
+     *
+     * 还有问题：如果本地新建一个项目 怎样进行上传
      */
 
 }
