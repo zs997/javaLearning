@@ -21,7 +21,7 @@ public class Main {
      * 现在对notebook进行测试
      *
      * 还有问题：如果本地新建一个项目 怎样进行上传
-
+        本地创建之后 创建git仓库 commit 然后share on github
 >>>>>>> Stashed changes
      */
 
